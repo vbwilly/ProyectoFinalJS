@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<usuarios>
+    <usuario>
+        <nombre>Guillermo Figueroa Olivera</nombre>
+        <usr>vbwilly</usr>
+        <pwd>123</pwd>
+        <perfil>300</perfil>
+    </usuario>
+    <usuario>
+        <nombre>Bill Gates</nombre>
+        <usr>microsoft</usr>
+        <pwd>456</pwd>
+        <perfil>555</perfil>
+    </usuario>
+    <usuario>
+        <nombre>Mark Zuckerberg</nombre>
+        <usr>facebook</usr>
+        <pwd>789</pwd>
+        <perfil>900</perfil>
+    </usuario>
+    <usuario>
+        <nombre>Betito Einstein</nombre>
+        <usr>buuum</usr>
+        <pwd>123456789</pwd>
+        <perfil>100</perfil>
+    </usuario>
+<!--     <usuario>
+        <nombre></nombre>
+        <usr></usr>
+        <pwd></pwd>
+        <perfil></perfil>
+    </usuario> -->
+</usuarios>

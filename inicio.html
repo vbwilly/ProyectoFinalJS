@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bafa713e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+
+</head>
+<body>
+    <!-- /* Video Origen="https://www.youtube.com/watch?v=9zS-bBa4j7k&t=84s"*/ -->
+    <div class="contenedor" id="lstusuarios">
+        <form action="">
+            <div class="selectbox">
+                <div class="select" id ="select">
+                    <div class="contenido-select">
+                        <h1 class="Usuario" id="UsrName">Selecciona al usuario</h1>
+                        <p class="descripcion">Debes elegir quien manipulará su dinero</p>
+                    </div>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="opciones" id="opciones">
+                    <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                            <img src="imagenes/GF.jpg" alt="">
+                            <div class="textos">
+                                <h2 class="titulos">Guillermo Figueroa Olivera</h2> </h2>
+                                <p class="descripcion">Papasito Azteca</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                            <img src="imagenes/bg.jpg" alt="">
+                            <div class="textos">
+                                <h2 class="titulos">Bill Gates</h2> </h2>
+                                <p class="descripcion">Fundador de Microsoft</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                            <img src="imagenes/MZ.jpg" alt="">
+                            <div class="textos">
+                                <h2 class="titulos">Mark Zuckerberg</h2> </h2>
+                                <p class="descripcion">Fundador de Facebook</p>
+                            </div>
+                        </div>
+                    </a>                    
+                    <a href="#" class="opcion">
+                        <div class="contenido-opcion">
+                            <img src="imagenes/AE.jpg" alt="">
+                            <div class="textos">
+                                <h2 class="titulos">Betito Einstein</h2> </h2>
+                                <p class="descripcion">E=mc2 (y ni me hagan enojar)</p>
+                            </div>
+                        </div>
+                    </a>                     
+                </div>
+            </div>
+            <input type="hidden" name="usuario" id="inputSelect" value="">
+
+            
+                <!-- Boton para leer XML, y listar los usuarios íntegros en él -->
+                <!-- <button onclick="ListaUsuarios();" id="ListarUsuarios"> Mostrar Usuarios </button> -->
+            
+
+            <div id="DivPassword" hidden> <!-- Frame/Div Para ocutar 1er grupo de objetos -->
+                <!-- <button type="submit" id="botonComenzar" hidden> Click para comenzar </button> --> <!-- hidden para ocultarlo --> 
+                <label for="textInput">Ingresa tu password:</label>
+                <input id="textInputPassword" class="custom" size="15" type="password">                
+                <button id="botonComenzar" > Click para continuar </button>
+                <!--Password= prompt("Ingresa el password para poder comenzar"); -->
+            </div>
+            <div hidden id="DivCalculadora" hidden> <!-- Frame/Div Para ocutar 1er grupo de objetos -->
+                <table class="calculadora">
+                    <tr>
+                      <td colspan="4"><span id="resultado"></span></td>
+                    </tr>
+                    <tr>
+                      <td><button id="siete">7</button></td>
+                      <td><button id="ocho">8</button></td>
+                      <td><button id="nueve">9</button></td>
+                      <td hidden><button id="division">/</button></td>
+                    </tr>
+                    <tr>
+                      <td><button id="cuatro">4</button></td>
+                      <td><button id="cinco">5</button></td>
+                      <td><button id="seis">6</button></td>
+                      <td hidden><button id="multiplicacion">*</button></td>
+                    </tr>
+                    <tr>
+                      <td><button id="uno">1</button></td>
+                      <td><button id="dos">2</button></td>
+                      <td><button id="tres">3</button></td>
+                      
+                      <td><button id="resta">-</button></td>
+                    </tr>
+                    <tr>
+                      <td><button id="igual">=</button></td>
+                      <td><button id="reset">Salir</button></td>
+                      <td><button id="cero">0</button></td>
+
+                      <td><button id="suma">+</button></td>
+                    </tr>
+                    </table>
+            </div>
+            <!-- <input type="checkbox" onclick="stopDefAction(event);"/> -->
+        </form>
+
+    </div>
+
+    <script src="javascript/funcionalidad.js"></script>
+
+</body>
+</html>
