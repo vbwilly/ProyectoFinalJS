@@ -2,32 +2,22 @@
 <usuarios>
     <usuario>
         <nombre>Guillermo Figueroa Olivera</nombre>
-        <usr>vbwilly</usr>
-        <pwd>123</pwd>
-        <perfil>300</perfil>
+	<pwd>123</pwd>
+        <saldo>300</Saldo>
     </usuario>
     <usuario>
         <nombre>Bill Gates</nombre>
-        <usr>microsoft</usr>
         <pwd>456</pwd>
-        <perfil>555</perfil>
+        <saldo>555</Saldo>
     </usuario>
     <usuario>
         <nombre>Mark Zuckerberg</nombre>
-        <usr>facebook</usr>
         <pwd>789</pwd>
-        <perfil>900</perfil>
+        <saldo>900</Saldo>
     </usuario>
     <usuario>
-        <nombre>Betito Einstein</nombre>
-        <usr>buuum</usr>
+        <nombre>Albert Einstein</nombre>
         <pwd>123456789</pwd>
-        <perfil>100</perfil>
+        <saldo>100</Saldo>
     </usuario>
-<!--     <usuario>
-        <nombre></nombre>
-        <usr></usr>
-        <pwd></pwd>
-        <perfil></perfil>
-    </usuario> -->
 </usuarios>

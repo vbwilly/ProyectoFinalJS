@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- para evitar el error -->
+    <link rel="shortcut icon" href="#"/>
     <title>Cajero Automático</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9bafa713e0.js" crossorigin="anonymous"></script>
+     -->
+
+    <!-- Google Font "Macondo" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="./estilos/estilos.css">
 
 </head>
@@ -28,7 +38,7 @@
                             <img src="imagenes/GF.jpg" alt="">
                             <div class="textos">
                                 <h2 class="titulos">Guillermo Figueroa Olivera</h2> </h2>
-                                <p class="descripcion">Papasito Azteca</p>
+                                <p class="descripcion">Ing. de Software</p>
                             </div>
                         </div>
                     </a>
@@ -62,12 +72,6 @@
                 </div>
             </div>
             <input type="hidden" name="usuario" id="inputSelect" value="">
-
-            
-                <!-- Boton para leer XML, y listar los usuarios íntegros en él -->
-                <!-- <button onclick="ListaUsuarios();" id="ListarUsuarios"> Mostrar Usuarios </button> -->
-            
-
             <div id="DivPassword" hidden> <!-- Frame/Div Para ocutar 1er grupo de objetos -->
                 <!-- <button type="submit" id="botonComenzar" hidden> Click para comenzar </button> --> <!-- hidden para ocultarlo --> 
                 <label for="textInput">Ingresa tu password:</label>
@@ -75,45 +79,30 @@
                 <button id="botonComenzar" > Click para continuar </button>
                 <!--Password= prompt("Ingresa el password para poder comenzar"); -->
             </div>
-            <div hidden id="DivCalculadora" hidden> <!-- Frame/Div Para ocutar 1er grupo de objetos -->
-                <table class="calculadora">
-                    <tr>
-                      <td colspan="4"><span id="resultado"></span></td>
-                    </tr>
-                    <tr>
-                      <td><button id="siete">7</button></td>
-                      <td><button id="ocho">8</button></td>
-                      <td><button id="nueve">9</button></td>
-                      <td hidden><button id="division">/</button></td>
-                    </tr>
-                    <tr>
-                      <td><button id="cuatro">4</button></td>
-                      <td><button id="cinco">5</button></td>
-                      <td><button id="seis">6</button></td>
-                      <td hidden><button id="multiplicacion">*</button></td>
-                    </tr>
-                    <tr>
-                      <td><button id="uno">1</button></td>
-                      <td><button id="dos">2</button></td>
-                      <td><button id="tres">3</button></td>
-                      
-                      <td><button id="resta">-</button></td>
-                    </tr>
-                    <tr>
-                      <td><button id="igual">=</button></td>
-                      <td><button id="reset">Salir</button></td>
-                      <td><button id="cero">0</button></td>
-
-                      <td><button id="suma">+</button></td>
-                    </tr>
-                    </table>
-            </div>
-            <!-- <input type="checkbox" onclick="stopDefAction(event);"/> -->
-        </form>
-
+        </form>            
+        <div id="DivTablaMain" hidden>
+            <table>
+                <tr>
+                    <td>
+                        ░▒▓DEPOSITO▓▒░<img src="./imagenes/Entrada.jpg" id="ImgDep" class="ImgAccion" onclick="FunDepositar()">
+                    </td>
+                    <td>
+                        <label id="lblSaldo" hidden>Tienes: </label>
+                    </td>
+                    <td>
+                        ░▒▓ RETIRO ▓▒░<img src="./imagenes/Salida.jpg" id="ImgRet" class="ImgAccion" onclick="FunRetirar()">
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
     </div>
+    <footer>
+        <input type="button" value="Reiniciar" onclick="location.reload()"/>
+    </footer>
 
-    <script src="javascript/funcionalidad.js"></script>
-
+    <script src="./javascript/funcionalidad.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweetalert.js"></script>    
 </body>
 </html>

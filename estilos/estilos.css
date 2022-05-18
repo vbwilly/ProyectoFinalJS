@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+    font-size: x-large;
     /*     text-decoration: none; */
 }
 
@@ -13,6 +15,19 @@ body{
 
 a{
     text-decoration: none;
+}
+body.lblSaldo{
+    font-family: 'Lobster', cursive;
+    color: darkred;
+    /* font-size: 120px; */
+    font-size: xx-large;
+    position: absolute;
+    text-align: center;
+}
+h3{
+    color:darkred;
+    /* position: absolute; */
+    text-align: center;
 }
 
 .contenedor{
@@ -143,47 +158,27 @@ color: #213f8f;
 
 }
 
+.contenedor.BarraEscala{
+    padding: 100px;
+    height: 500px;
+    width: 1000px;
+}
+
 @media screen and (max-width: 800px){
     .selectbox{
         width: 100%;
     }    
 }
-/* ************************************************************************************************************************ */
-/* ************************************************************************************************************************ */
-/* ************************************************ESTILOS DE LA CALCULADORA*********************************************** */
-/* ************************************************************************************************************************ */
-/* ************************************************************************************************************************ */
-.calculadora{
-    display:block;
-    margin:0 auto;
-    padding:20px;
-    background-color:#2980b9;
-    width:350px;
-    height:500px;
-    border-radius: 25px;
+
+  /*****************************************************************************************************************************************/
+  /*************ESTILO DE LOS MOVIMIENTOS***************************************************************************************************/
+  /*****************************************************************************************************************************************/
+  /*****************************************************************************************************************************************/
+  .ImgAccion{
+    display: block;
+    width: 200px;
   }
-  .calculadora td button{
-    display:block;
-    width:70px;
-    height: 70px;
-    font-size: 25px;
-  }
-  #creditos{
-    display:block;
-    padding-top:20px;
-    color:#fff;
-    text-align: center;
-    width:300px;
-  }
-  #resultado{
-    display:block;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    width:300px;
-    height: 100px;
-    line-height: 100px;
-    background-color:#fff;
-    border-radius: 25px;
-    overflow-y: scroll;
+
+  td{
+      align-self: center;
   }
